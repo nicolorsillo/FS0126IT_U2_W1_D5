@@ -147,7 +147,7 @@ img {
 }
 
 #trending-title img {
-  width: 2.5%;
+  width: 1.7em;
   margin-right: 0.7em;
 }
 #trending-title {
@@ -282,4 +282,65 @@ img {
   color: #909090;
   font-size: 0.9em;
   margin-right: 1em;
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    font-size: 85%;
+  }
+  #header-bar {
+    padding: 1em 5%;
+  }
+
+  #hero {
+    padding-left: 5%;
+  }
+
+  #trending-section {
+    padding: 2.5em 5%;
+  }
+
+  button {
+    font-size: 90%;
+  }
+
+  #bottom-div {
+    flex-direction: column-reverse;
+    gap: 3em;
+    margin: 4em 5%;
+  }
+
+  .trending-article a {
+    width: 40vw;
+  }
+
+  .main-article {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .mobile-hidden {
+    display: none;
+  }
+
+  h1 {
+    font-size: 4em;
+  }
+
+  .article-pop {
+    font-size: 70%;
+  }
+
+  .trending-article a {
+    width: 100%;
+  }
+
+  #main-section {
+    font-size: 90%;
+  }
+
+  .article-img {
+    max-height: 7em;
+  }
 }
