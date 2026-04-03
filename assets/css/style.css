@@ -64,10 +64,6 @@ img {
   max-width: 100%;
 }
 
-#M {
-  height: 40vh;
-}
-
 /* navigation bar */
 #header-bar {
   display: flex;
@@ -140,6 +136,7 @@ img {
   gap: 2em;
   align-items: start;
   margin: 4em 0;
+  min-width: 70%;
 }
 /* trending */
 #trending-section {
@@ -165,7 +162,7 @@ img {
 }
 
 .trending-article a {
-  width: 25vw;
+  width: 20vw;
   display: flex;
   align-items: start;
 }
@@ -283,6 +280,17 @@ img {
   font-size: 0.9em;
   margin-right: 1em;
 }
+#M {
+  height: 100%;
+  object-fit: cover;
+}
+#m-div {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
 
 @media screen and (max-width: 1000px) {
   body {
@@ -342,5 +350,8 @@ img {
 
   .article-img {
     max-height: 7em;
+  }
+  #m-div {
+    display: none;
   }
 }
