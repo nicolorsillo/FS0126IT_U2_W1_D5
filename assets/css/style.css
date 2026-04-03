@@ -1,0 +1,285 @@
+@keyframes changecolorwhite {
+  0% {
+    background-color: #ffc017;
+  }
+  100% {
+    background-color: white;
+  }
+}
+
+@keyframes changecolorgreen {
+  0% {
+    background-color: black;
+  }
+  100% {
+    background-color: green;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+}
+
+h1 {
+  font-size: 6em;
+  font-family: "Spectral", serif;
+  font-weight: 500;
+  letter-spacing: -0.07em;
+}
+
+h2 {
+  font-size: 1.3em;
+  font-weight: 700;
+  color: #191919;
+  margin: 0.7em 0;
+}
+h3 {
+  font-size: 1em;
+  font-weight: 700;
+  color: #191919;
+  margin: 0.7em 0;
+}
+h4 {
+  font-size: 0.8em;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+}
+
+h5 {
+  margin-left: 0.5em;
+  font-size: 0.8em;
+  font-weight: 600;
+}
+
+hr {
+  border-top: 1px solid #e6e6e6;
+}
+
+img {
+  max-width: 100%;
+}
+
+#M {
+  height: 40vh;
+}
+
+/* navigation bar */
+#header-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 10%;
+  background-color: #ffc017;
+  border-bottom: #19191948 solid 2px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  animation: changecolorwhite linear forwards;
+  animation-timeline: scroll(y);
+  animation-range: 0vh 50vh;
+}
+
+#header-nav ul {
+  display: flex;
+  gap: 2.5em;
+  align-items: center;
+  font-size: 0.9em;
+}
+/* buttons */
+.black-button {
+  background-color: #191919;
+  border-radius: 2em;
+  color: white;
+  padding: 1em 1.5em;
+  border: none;
+  cursor: pointer;
+}
+
+#get-started {
+  animation: changecolorgreen linear forwards;
+  animation-timeline: scroll(y);
+  animation-range: 0vh 50vh;
+}
+
+#start-reading {
+  padding: 0.5em 2.5em;
+  font-size: 1em;
+  margin-top: 2em;
+}
+
+.discover-button {
+  background-color: transparent;
+  border: #b2b2b2 1px solid;
+  color: #909090;
+  padding: 0.7em 1.4em;
+  margin: 0.3em 0.6em 0.3em 0em;
+  cursor: pointer;
+}
+/* hero */
+#hero p {
+  font-size: 1.2em;
+  max-width: 70%;
+}
+#hero {
+  padding-left: 10%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffc017;
+  border-bottom: #19191948 solid 2px;
+}
+#hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2em;
+  align-items: start;
+  margin: 4em 0;
+}
+/* trending */
+#trending-section {
+  padding: 2.5em 10%;
+}
+
+#trending-title img {
+  width: 2.5%;
+  margin-right: 0.7em;
+}
+#trending-title {
+  display: flex;
+
+  align-items: center;
+}
+
+#trending-articles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2em;
+  margin-top: 1em;
+}
+
+.trending-article a {
+  width: 25vw;
+  display: flex;
+  align-items: start;
+}
+
+.circle-profile {
+  border-radius: 50%;
+}
+
+.square-profile {
+  border-radius: 25% 25%;
+}
+/* articles */
+.number {
+  margin-right: 1em;
+  font-size: 2em;
+  font-weight: 800;
+  color: #19191944;
+}
+
+#trending-section .article-pop img {
+  width: 1.4em;
+}
+
+.autor {
+  display: flex;
+  align-items: center;
+  margin-top: 0.4em;
+}
+
+.article-info {
+  font-size: 0.9em;
+  color: #878787;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+/* bottom-div */
+#bottom-div {
+  margin: 4em 10%;
+  display: flex;
+  align-items: start;
+  gap: 7em;
+}
+
+/* bottom-secction */
+
+#main-section {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+
+.main-article {
+  width: 45vw;
+}
+.main-article .article-pop {
+  width: 100%;
+}
+.main-article .autor img {
+  width: 1.5em;
+  margin-right: 0.2em;
+}
+
+.article-intro {
+  font-size: 1em;
+  margin-bottom: 0.7em;
+  color: #909090;
+}
+
+.article-aurguments {
+  background-color: #ececec;
+  border-radius: 3em;
+  padding: 0.6em;
+  display: inline-block;
+}
+
+.article-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.article-bottom a {
+  display: inline-block;
+}
+
+.main-article a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.article-img {
+  max-height: 10em;
+  margin-left: 1.5em;
+}
+/* aside */
+
+#aurgoments-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  margin: 1.5em 0;
+}
+
+#site-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  margin-top: 1.5em;
+}
+
+#site-nav ul li a {
+  color: #909090;
+  font-size: 0.9em;
+  margin-right: 1em;
+}
